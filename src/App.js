@@ -9,18 +9,22 @@ import MachineTemperature from "./components/MachineTemperature"
 import { Container } from "@mui/material"
 import Grid from "@mui/material/Unstable_Grid2"
 import HomePage from "./components/HomePage"
+import StatusBar from "./components/StatusBar"
 
 function App() {
   return (
     <div>
       <Notification />
       <Grid container spacing={4}>
-        <Grid>
+        {/* <Grid>
           <Time />
         </Grid>
         <Grid>
           <MachineTemperature />
-        </Grid>
+        </Grid> */}
+        {/* <Grid> */}
+        <StatusBar />
+        {/* </Grid> */}
         <Grid>
           <Routes>
             <Route path="/" element={<HomePage />} />
