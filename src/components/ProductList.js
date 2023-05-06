@@ -5,9 +5,7 @@ import Product from "./Product"
 const ProductList = () => {
   const productsArr = useSelector(({ products }) => products)
   return (
-    <div
-    // style={{ borderStyle: "solid" }}
-    >
+    <div>
       <Grid item container justifyContent="space-evenly">
         {productsArr.map((productObj) => {
           const { productId, ...productProps } = productObj

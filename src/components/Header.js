@@ -3,7 +3,7 @@ import { Typography } from "@mui/material"
 const Header = () => {
   return (
     <Typography
-      variant="h3"
+      variant="h2"
       gutterBottom
       color="#586F6B"
       className="noselect"

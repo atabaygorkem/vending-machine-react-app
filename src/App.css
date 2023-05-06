@@ -1,3 +1,26 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+/* .insert-button {
+  margin: 10px;
+} */
+
+.product {
+  margin: 42px 10px;
+}
+
+.main-bg-color {
+  background-color: #e7ebf0;
+}
+
+.noselect {
+  user-select: none;
+}
+
 /* .App {
   text-align: center;
 }
@@ -61,7 +84,7 @@
   height: 20vh;
 } */
 
-.success {
+/* .success {
   color: green;
   background: lightblue;
   align-items: center;
@@ -77,31 +100,4 @@
   justify-content: center;
   display: flex;
   margin-inline: 30vw;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.insert-button {
-  margin: 10px;
-}
-
-.operation-button {
-  margin: 10px;
-}
-
-.product {
-  margin: 42px 10px;
-}
-
-.main-bg-color {
-  background-color: #e7ebf0;
-}
-
-.noselect {
-  user-select: none;
-}
+} */

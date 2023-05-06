@@ -35,27 +35,15 @@ const AuthorizedPage = () => {
   return (
     <div>
       <Grid container item justifyContent="center" mt={9}>
-        <IconButton aria-label="share">
+        <IconButton>
           Balance: {supplier.supplierBalance} <AttachMoneyIcon />
         </IconButton>
       </Grid>
 
       <Grid container justifyContent="center">
-        <MachineButton
-          onClick={getMoney}
-          text="Withdraw Money"
-          className="operation-button"
-        />
-        <MachineButton
-          onClick={reset}
-          text="Reset Products"
-          className="operation-button"
-        />
-        <MachineButton
-          onClick={returnHomePage}
-          text="Return to products"
-          className="operation-button"
-        />
+        <MachineButton onClick={getMoney} text="Withdraw Money" />
+        <MachineButton onClick={reset} text="Reset Products" />
+        <MachineButton onClick={returnHomePage} text="Return to products" />
       </Grid>
     </div>
   )

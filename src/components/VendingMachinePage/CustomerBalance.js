@@ -6,7 +6,7 @@ const CustomerBalance = () => {
   const { customerBalance } = useSelector((state) => state)
   return (
     <Grid container item justifyContent="center" mb={3}>
-      <IconButton aria-label="share">
+      <IconButton>
         Balance: {customerBalance.balance} <AttachMoneyIcon />
       </IconButton>
     </Grid>

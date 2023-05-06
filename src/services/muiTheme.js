@@ -19,19 +19,16 @@ export const theme = createTheme({
     }),
     machineButton: palette.augmentColor({
       color: {
-        // main: "#700548",
         main: "#578381",
       },
     }),
     buyButton: palette.augmentColor({
       color: {
-        // main: "#700548",
         main: "#57A773",
       },
     }),
     cancelButton: palette.augmentColor({
       color: {
-        // main: "#700548",
         main: "#E55B4F",
       },
     }),

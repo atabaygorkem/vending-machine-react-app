@@ -1,7 +1,5 @@
 import {
-  Avatar,
   ListItem,
-  ListItemAvatar,
   ListItemButton,
   ListItemIcon,
   ListItemText,

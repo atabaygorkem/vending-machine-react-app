@@ -17,14 +17,10 @@ function App() {
         container
         direction="column"
         alignItems="center"
-        // bgcolor="violet"
         sx={{ width: "75%" }}
         mt={4}
       >
-        <Grid item>
-          <Header />
-        </Grid>
-
+        <Header />
         <StatusBar />
 
         <Routes>

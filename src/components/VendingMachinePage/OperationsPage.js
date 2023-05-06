@@ -63,24 +63,16 @@ const OperationsPage = () => {
 
   return (
     <>
-      <Grid
-        container
-        item
-        justifyContent="center"
-        alignItems="center"
-        // bgcolor="yellow"
-      >
+      <Grid container item justifyContent="center" alignItems="center">
         <MachineButton
           onClick={purchaseProduct}
           disabled={isDisabled}
           text="Buy"
-          className="operation-button"
         />
         <MachineButton
           onClick={cancelOperation}
           disabled={isDisabled}
           text="Cancel"
-          className="operation-button"
         />
       </Grid>
     </>

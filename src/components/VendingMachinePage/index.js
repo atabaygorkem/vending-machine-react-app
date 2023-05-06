@@ -7,15 +7,8 @@ import OperationsPage from "./OperationsPage"
 
 const VendingMachinePage = () => {
   return (
-    <div
-    // style={{ borderStyle: "solid" }}
-    >
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        // alignItems="center"
-      >
+    <div>
+      <Grid container direction="column" justifyContent="center">
         <CustomerBalance />
         <InsertMoneyPage />
         <OperationsPage />

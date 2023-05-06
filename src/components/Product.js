@@ -12,20 +12,6 @@ import { increaseTemperature } from "../state/reducers/machineTemperatureReducer
 import { selectProduct } from "../state/reducers/productsReducer"
 import { addFiveMin } from "../state/reducers/timeReducer"
 
-const selected = {
-  // color: "green",
-  // fontStyle: "italic",
-  // fontSize: 16,
-  // margin: 40,
-  // padding: 10,
-  // borderStyle: "solid",
-  // borderRadius: 30,
-  // borderColor: "gray",
-  // // display: "flex",
-  // borderColor: "black",
-  // background: "gray",
-}
-
 const Product = ({
   productName,
   productPrice,
@@ -60,12 +46,7 @@ const Product = ({
           title={productName}
         />
         <CardContent>
-          <Grid
-            container
-            direction="column"
-            // justifyContent="center"
-            alignItems="center"
-          >
+          <Grid container direction="column" alignItems="center">
             <Typography gutterBottom variant="h5" component="div">
               {productName}
             </Typography>

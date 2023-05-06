@@ -21,6 +21,7 @@ const MachineTemperature = () => {
     if (temperature.currentTemperature >= temperature.maxTemperature) {
       dispatch(decreaseTemperature())
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [temperature.currentTemperature])
 
   return (
@@ -41,13 +42,6 @@ const MachineTemperature = () => {
         </ListItemButton>
       </Tooltip>
     </ListItem>
-    // <div
-    // // style={{ backgroundColor: "violet" }}
-    // >
-    //   <p>
-    //     {temperature.currentTemperature}°C {temperature.isCooling && "Cooling"}
-    //   </p>
-    // </div>
   )
 }
 

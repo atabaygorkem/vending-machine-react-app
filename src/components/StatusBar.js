@@ -5,13 +5,7 @@ import Time from "./Time"
 const StatusBar = () => {
   return (
     <>
-      <Grid
-        item
-        container
-        justifyContent="space-evenly"
-        // bgcolor="yellow"
-        my={4}
-      >
+      <Grid item container justifyContent="space-evenly" my={4}>
         <Grid item>
           <Time />
         </Grid>

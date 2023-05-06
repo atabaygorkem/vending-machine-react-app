@@ -29,7 +29,6 @@ const ChangeBox = () => {
           "Change: " +
           (customerBalance.change ? `${customerBalance.change}$` : "")
         }
-        className="operation-button"
       />
     </Grid>
   )

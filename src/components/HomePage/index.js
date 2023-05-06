@@ -6,11 +6,7 @@ import VendingMachinePage from "../VendingMachinePage"
 const HomePage = () => {
   return (
     <>
-      <Grid
-        item
-        container
-        // bgcolor="aqua"
-      >
+      <Grid item container>
         <Grid item xs={7}>
           <ProductList />
         </Grid>
