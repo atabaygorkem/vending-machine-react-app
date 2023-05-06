@@ -1,6 +1,16 @@
+import {
+  Avatar,
+  ListItem,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Tooltip,
+} from "@mui/material"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { tick } from "../state/reducers/timeReducer"
+import AccessTimeIcon from "@mui/icons-material/AccessTime"
 
 const Time = () => {
   const time = useSelector(({ time }) => time)
@@ -11,9 +21,16 @@ const Time = () => {
   }, [])
 
   return (
-    <div>
-      <p>{new Date(time).toLocaleTimeString()}</p>
-    </div>
+    <ListItem disablePadding>
+      <Tooltip title="Time is the inevitable progression into the future">
+        <ListItemButton>
+          <ListItemIcon>
+            <AccessTimeIcon />
+          </ListItemIcon>
+          <ListItemText primary={new Date(time).toLocaleTimeString()} />
+        </ListItemButton>
+      </Tooltip>
+    </ListItem>
   )
 }
 

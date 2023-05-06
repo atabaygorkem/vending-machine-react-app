@@ -38,17 +38,18 @@ const OperationsPage = () => {
         dispatch(resetSelection())
 
         sendNotification(
-          `${selectedProduct.productName} has been dispensed. Have a nice day.`,
+          `${selectedProduct.productName} has been dispensed. 
+          Have a nice day 😄`,
           "success",
           4
         )
       } else if (!haveBalance) {
-        sendNotification("You need to insert more money", "error", 4)
+        sendNotification("You need to insert more money ", "warning", 4)
       } else if (!haveProduct) {
         sendNotification(`${selectedProduct.productName} sold out`, "error", 4)
       }
     } else {
-      sendNotification("You must choose a product", "error", 4)
+      sendNotification("You must choose a product", "info", 4)
     }
   }
 
@@ -57,7 +58,7 @@ const OperationsPage = () => {
     dispatch(addFiveMin())
     dispatch(increaseTemperature())
 
-    sendNotification("Don't forget to take your money", "error", 4)
+    sendNotification("Don't forget to take your money", "warning", 4)
   }
 
   return (

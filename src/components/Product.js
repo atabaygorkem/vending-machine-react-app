@@ -1,4 +1,11 @@
-import { Grid } from "@mui/material"
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+} from "@mui/material"
 import { useDispatch } from "react-redux"
 import useButtonStatus from "../hooks/useButtonStatus"
 import { increaseTemperature } from "../state/reducers/machineTemperatureReducer"
@@ -15,8 +22,8 @@ const selected = {
   // borderRadius: 30,
   // borderColor: "gray",
   // // display: "flex",
-  borderColor: "black",
-  background: "gray",
+  // borderColor: "black",
+  // background: "gray",
 }
 
 const Product = ({
@@ -36,15 +43,42 @@ const Product = ({
   }
 
   return (
-    <div
+    <Card
+      sx={{ maxWidth: 345 }}
       className="product"
-      style={isSelected ? selected : { borderStyle: "solid" }}
+      style={
+        isSelected
+          ? { backgroundColor: "gray" }
+          : { backgroundColor: "#C9CDD8" }
+      }
       onClick={onClick}
     >
-      <p className="p">{productName}</p>
-      <p className="p">{productPrice} $</p>
-      <p className="p">{productQuantity} left</p>
-    </div>
+      <CardActionArea>
+        <CardMedia
+          sx={{ height: 150, width: 250 }}
+          image={`/static/images/${productName.toLowerCase()}.jpg`}
+          title={productName}
+        />
+        <CardContent>
+          <Grid
+            container
+            direction="column"
+            // justifyContent="center"
+            alignItems="center"
+          >
+            <Typography gutterBottom variant="h5" component="div">
+              {productName}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {productPrice} $
+            </Typography>
+            <Typography variant="body3" color="text.secondary" marginTop={1}>
+              {productQuantity} left
+            </Typography>
+          </Grid>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   )
 }
 

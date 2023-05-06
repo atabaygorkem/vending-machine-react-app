@@ -95,5 +95,13 @@
 }
 
 .product {
-  margin: 42px 0;
+  margin: 42px 10px;
+}
+
+.main-bg-color {
+  background-color: #e7ebf0;
+}
+
+.noselect {
+  user-select: none;
 }

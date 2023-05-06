@@ -26,7 +26,8 @@ const ChangeBox = () => {
         onClick={returnMoney}
         disabled={isDisabled}
         text={
-          "Change: " + (customerBalance.change ? customerBalance.change : "")
+          "Change: " +
+          (customerBalance.change ? `${customerBalance.change}$` : "")
         }
         className="operation-button"
       />

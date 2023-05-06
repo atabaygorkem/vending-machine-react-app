@@ -3,15 +3,14 @@ import Notification from "./components/Notification"
 import { Route, Routes } from "react-router-dom"
 import SupplierPage from "./components/SupplierPage"
 import MachineOperationsPage from "./components/SupplierPage/MachineOperationsPage"
-import { Container, Grid, Paper } from "@mui/material"
-
+import { Grid } from "@mui/material"
 import HomePage from "./components/HomePage"
 import StatusBar from "./components/StatusBar"
 import Header from "./components/Header"
 
 function App() {
   return (
-    <div className="center">
+    <div className="center ">
       <Notification />
 
       <Grid
@@ -20,6 +19,7 @@ function App() {
         alignItems="center"
         // bgcolor="violet"
         sx={{ width: "75%" }}
+        mt={4}
       >
         <Grid item>
           <Header />

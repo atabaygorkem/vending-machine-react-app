@@ -10,6 +10,7 @@ const StatusBar = () => {
         container
         justifyContent="space-evenly"
         // bgcolor="yellow"
+        my={4}
       >
         <Grid item>
           <Time />

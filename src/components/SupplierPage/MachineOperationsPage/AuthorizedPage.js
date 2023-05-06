@@ -4,7 +4,8 @@ import { signOut, withdrawMoney } from "../../../state/reducers/supplierReducer"
 import { resetProducts } from "../../../state/reducers/productsReducer"
 import useMachineNotification from "../../../hooks/useMachineNotification"
 import MachineButton from "../../MachineButton"
-import { Grid } from "@mui/material"
+import { Grid, IconButton } from "@mui/material"
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney"
 
 const AuthorizedPage = () => {
   const supplier = useSelector(({ supplier }) => supplier)
@@ -16,12 +17,15 @@ const AuthorizedPage = () => {
     sendNotification(
       `You successfully withdraw ${supplier.supplierBalance}$`,
       "success",
-      4
+      3
     )
     dispatch(withdrawMoney())
   }
 
-  const reset = () => dispatch(resetProducts())
+  const reset = () => {
+    sendNotification(`Success`, "success", 2)
+    dispatch(resetProducts())
+  }
 
   const returnHomePage = () => {
     dispatch(signOut())
@@ -30,9 +34,11 @@ const AuthorizedPage = () => {
 
   return (
     <div>
-      <div className="center">
-        <p>Balance: {supplier.supplierBalance}</p>
-      </div>
+      <Grid container item justifyContent="center" mt={9}>
+        <IconButton aria-label="share">
+          Balance: {supplier.supplierBalance} <AttachMoneyIcon />
+        </IconButton>
+      </Grid>
 
       <Grid container justifyContent="center">
         <MachineButton
