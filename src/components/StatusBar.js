@@ -1,16 +1,22 @@
-import Grid from "@mui/material/Unstable_Grid2"
+import { Grid } from "@mui/material"
 import MachineTemperature from "./MachineTemperature"
 import Time from "./Time"
 
 const StatusBar = () => {
   return (
     <>
-      <Grid xs={3}>
-        <Time />
-      </Grid>
-
-      <Grid>
-        <MachineTemperature />
+      <Grid
+        item
+        container
+        justifyContent="space-evenly"
+        // bgcolor="yellow"
+      >
+        <Grid item>
+          <Time />
+        </Grid>
+        <Grid item>
+          <MachineTemperature />
+        </Grid>
       </Grid>
     </>
   )

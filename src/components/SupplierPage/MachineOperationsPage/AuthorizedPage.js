@@ -4,6 +4,7 @@ import { signOut, withdrawMoney } from "../../../state/reducers/supplierReducer"
 import { resetProducts } from "../../../state/reducers/productsReducer"
 import useMachineNotification from "../../../hooks/useMachineNotification"
 import MachineButton from "../../MachineButton"
+import { Grid } from "@mui/material"
 
 const AuthorizedPage = () => {
   const supplier = useSelector(({ supplier }) => supplier)
@@ -29,11 +30,27 @@ const AuthorizedPage = () => {
 
   return (
     <div>
-      <p>Balance: {supplier.supplierBalance}</p>
+      <div className="center">
+        <p>Balance: {supplier.supplierBalance}</p>
+      </div>
 
-      <MachineButton onClick={getMoney} text="Withdraw Money" />
-      <MachineButton onClick={reset} text="Reset Products" />
-      <MachineButton onClick={returnHomePage} text="Return to products" />
+      <Grid container justifyContent="center">
+        <MachineButton
+          onClick={getMoney}
+          text="Withdraw Money"
+          className="operation-button"
+        />
+        <MachineButton
+          onClick={reset}
+          text="Reset Products"
+          className="operation-button"
+        />
+        <MachineButton
+          onClick={returnHomePage}
+          text="Return to products"
+          className="operation-button"
+        />
+      </Grid>
     </div>
   )
 }

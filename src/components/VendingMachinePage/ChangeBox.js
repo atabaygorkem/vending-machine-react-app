@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material"
 import { useDispatch, useSelector } from "react-redux"
 import useButtonStatus from "../../hooks/useButtonStatus"
 import useMachineNotification from "../../hooks/useMachineNotification"
@@ -20,16 +21,16 @@ const ChangeBox = () => {
   }
 
   return (
-    <div>
+    <Grid container justifyContent="center">
       <MachineButton
         onClick={returnMoney}
         disabled={isDisabled}
         text={
           "Change: " + (customerBalance.change ? customerBalance.change : "")
         }
-        style={{ width: 110, height: 25 }}
+        className="operation-button"
       />
-    </div>
+    </Grid>
   )
 }
 

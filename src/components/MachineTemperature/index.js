@@ -15,7 +15,9 @@ const MachineTemperature = () => {
   }, [temperature.currentTemperature])
 
   return (
-    <div>
+    <div
+    // style={{ backgroundColor: "violet" }}
+    >
       <p>
         {temperature.currentTemperature}°C {temperature.isCooling && "Cooling"}
       </p>

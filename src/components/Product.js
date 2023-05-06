@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material"
 import { useDispatch } from "react-redux"
 import useButtonStatus from "../hooks/useButtonStatus"
 import { increaseTemperature } from "../state/reducers/machineTemperatureReducer"
@@ -37,7 +38,7 @@ const Product = ({
   return (
     <div
       className="product"
-      style={isSelected ? selected : {}}
+      style={isSelected ? selected : { borderStyle: "solid" }}
       onClick={onClick}
     >
       <p className="p">{productName}</p>

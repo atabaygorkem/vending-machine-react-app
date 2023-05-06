@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material"
 import { useDispatch, useSelector } from "react-redux"
 import useButtonStatus from "../../hooks/useButtonStatus"
 import useMachineNotification from "../../hooks/useMachineNotification"
@@ -61,16 +62,26 @@ const OperationsPage = () => {
 
   return (
     <>
-      <MachineButton
-        onClick={purchaseProduct}
-        disabled={isDisabled}
-        text="Buy"
-      />
-      <MachineButton
-        onClick={cancelOperation}
-        disabled={isDisabled}
-        text="Cancel"
-      />
+      <Grid
+        container
+        item
+        justifyContent="center"
+        alignItems="center"
+        // bgcolor="yellow"
+      >
+        <MachineButton
+          onClick={purchaseProduct}
+          disabled={isDisabled}
+          text="Buy"
+          className="operation-button"
+        />
+        <MachineButton
+          onClick={cancelOperation}
+          disabled={isDisabled}
+          text="Cancel"
+          className="operation-button"
+        />
+      </Grid>
     </>
   )
 }

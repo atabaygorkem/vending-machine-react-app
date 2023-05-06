@@ -1,15 +1,25 @@
+import { Grid } from "@mui/material"
 import ProductList from "../ProductList"
 import SupplierPanelButton from "../SupplierPanelButton"
 import VendingMachinePage from "../VendingMachinePage"
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Product List</h1>
-      <ProductList />
-      <VendingMachinePage />
+    <>
+      <Grid
+        item
+        container
+        // bgcolor="aqua"
+      >
+        <Grid item xs={7}>
+          <ProductList />
+        </Grid>
+        <Grid item xs={5}>
+          <VendingMachinePage />
+        </Grid>
+      </Grid>
       <SupplierPanelButton />
-    </div>
+    </>
   )
 }
 

@@ -35,16 +35,8 @@
   to {
     transform: rotate(360deg);
   }
-} */
+} 
 
-/* 
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .center-text {
   font-size: medium;
@@ -67,7 +59,7 @@
   flex-direction: column;
   width: 8vw;
   height: 20vh;
-}
+} */
 
 .success {
   color: green;
@@ -85,4 +77,23 @@
   justify-content: center;
   display: flex;
   margin-inline: 30vw;
-} */
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.insert-button {
+  margin: 10px;
+}
+
+.operation-button {
+  margin: 10px;
+}
+
+.product {
+  margin: 42px 0;
+}
