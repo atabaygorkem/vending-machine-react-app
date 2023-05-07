@@ -31,7 +31,10 @@ const Time = () => {
           <ListItemIcon>
             <AccessTimeIcon />
           </ListItemIcon>
-          <ListItemText primary={new Date(time).toLocaleTimeString()} />
+          <ListItemText
+            primary={new Date(time).toLocaleTimeString()}
+            id="time"
+          />
         </ListItemButton>
       </Tooltip>
     </ListItem>

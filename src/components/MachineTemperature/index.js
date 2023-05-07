@@ -32,7 +32,7 @@ const MachineTemperature = () => {
           <ListItemIcon>
             <DeviceThermostatIcon />
           </ListItemIcon>
-          <ListItemText>
+          <ListItemText id="temperature">
             {temperature.currentTemperature}°C{" "}
             {temperature.isCooling && (
               <ListItemIcon>

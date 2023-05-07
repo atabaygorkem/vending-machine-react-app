@@ -22,3 +22,8 @@ root.render(
     </BrowserRouter>
   </Provider>
 )
+
+//Expose store to window obj to access and e2e test redux store inside Cypress
+if (window.Cypress) {
+  window.store = store
+}
