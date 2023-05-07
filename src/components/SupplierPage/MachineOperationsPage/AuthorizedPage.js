@@ -7,6 +7,11 @@ import MachineButton from "../../MachineButton"
 import { Grid, IconButton } from "@mui/material"
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney"
 
+/**
+ * Render page after successfully log in
+ * @returns {React.ReactElement}
+ */
+
 const AuthorizedPage = () => {
   const supplier = useSelector(({ supplier }) => supplier)
   const dispatch = useDispatch()

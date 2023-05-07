@@ -13,12 +13,23 @@ import { selectProduct } from "../state/reducers/productsReducer"
 import { addFiveMin } from "../state/reducers/timeReducer"
 import PropTypes from "prop-types"
 
+/**
+ * Render a single product
+ * @component
+ * @param {string} productName
+ * @param {number} productPrice
+ * @param {number} productQuantity
+ * @param {boolean} isSelected - Products state indicates the product is chosen or not
+ * @returns {React.ReactElement} - Material ui core Card component
+ */
+
 const Product = ({
   productName,
   productPrice,
   productQuantity,
   isSelected,
 }) => {
+  /* Get buttons status from machineTemperature state */
   const isDisabled = useButtonStatus()
   const dispatch = useDispatch()
 

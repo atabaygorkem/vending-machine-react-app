@@ -2,6 +2,11 @@ import { Chip } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings"
 
+/**
+ * Button navigates user to admin panel
+ * @returns {React.ReactElement} - Material ui core Chip component
+ */
+
 const SupplierPanelButton = () => {
   const navigate = useNavigate()
 

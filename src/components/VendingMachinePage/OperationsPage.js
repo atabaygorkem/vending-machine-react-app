@@ -15,6 +15,11 @@ import { addMoneyToSupplierBalance } from "../../state/reducers/supplierReducer"
 import { addFiveMin } from "../../state/reducers/timeReducer"
 import MachineButton from "../MachineButton"
 
+/**
+ * Render Buy and Cancel buttons
+ * @returns {React.Fragment}
+ */
+
 const OperationsPage = () => {
   const { customerBalance, products } = useSelector((state) => state)
   const dispatch = useDispatch()

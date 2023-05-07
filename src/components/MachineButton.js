@@ -1,6 +1,14 @@
 import { Button } from "@mui/material"
 import PropTypes from "prop-types"
 
+/**
+ * Render a single custom button that is used in the vending machine
+ * @param {function} onClick - callback function when button is clicked
+ * @param {string} text
+ * @param {Object} rest - All remaining props if any
+ * @returns {React.ReactElement} - Material ui core Button component
+ */
+
 const MachineButton = ({ onClick, text = "", ...rest }) => {
   return (
     <Button

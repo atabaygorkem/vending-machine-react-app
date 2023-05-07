@@ -3,6 +3,12 @@ import ProductList from "../ProductList"
 import SupplierPanelButton from "../SupplierPanelButton"
 import VendingMachinePage from "../VendingMachinePage"
 
+/**
+ * Component that is rendered when the user navigate to / route.
+ * Render components that serve the main functionalities of the vending machine
+ * @returns {React.Fragment}
+ */
+
 const HomePage = () => {
   return (
     <>

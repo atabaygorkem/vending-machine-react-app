@@ -6,6 +6,11 @@ import { increaseTemperature } from "../../state/reducers/machineTemperatureRedu
 import { addFiveMin } from "../../state/reducers/timeReducer"
 import MachineButton from "../MachineButton"
 
+/**
+ * Render Insert Money buttons
+ * @returns {React.Fragment}
+ */
+
 const InsertMoneyPage = () => {
   const isDisabled = useButtonStatus()
   const dispatch = useDispatch()

@@ -1,7 +1,6 @@
 import { Grid } from "@mui/material"
 import ChangeBox from "./ChangeBox"
 import CustomerBalance from "./CustomerBalance"
-
 import InsertMoneyPage from "./InsertMoneyPage"
 import OperationsPage from "./OperationsPage"
 

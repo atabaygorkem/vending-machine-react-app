@@ -7,6 +7,11 @@ import { increaseTemperature } from "../../state/reducers/machineTemperatureRedu
 import { addFiveMin } from "../../state/reducers/timeReducer"
 import MachineButton from "../MachineButton"
 
+/**
+ * Render change box button
+ * @returns {React.ReactElement}
+ */
+
 const ChangeBox = () => {
   const { customerBalance } = useSelector((state) => state)
   const dispatch = useDispatch()

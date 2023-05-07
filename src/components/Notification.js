@@ -2,6 +2,11 @@ import { Alert, Snackbar } from "@mui/material"
 import { useDispatch, useSelector } from "react-redux"
 import { setOpen } from "../state/reducers/notificationReducer"
 
+/**
+ * Render notification to the screen
+ * @returns {React.ReactElement} - Material ui core Snackbar component
+ */
+
 const Notification = () => {
   const { text, type, isOpen, duration } = useSelector(
     ({ notification }) => notification

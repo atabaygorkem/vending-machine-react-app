@@ -46,6 +46,8 @@
     ]
   },
   "devDependencies": {
-    "react-docgen": "^5.4.3"
+    "jsdoc": "^4.0.2",
+    "react-docgen": "^5.4.3",
+    "react-styleguidist": "^13.1.1"
   }
 }

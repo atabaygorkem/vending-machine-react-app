@@ -1,5 +1,10 @@
 import { Typography } from "@mui/material"
 
+/**
+ * Render application header
+ * @returns {React.ReactElement} - Material ui core Typography component
+ */
+
 const Header = () => {
   return (
     <Typography

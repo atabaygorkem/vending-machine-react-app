@@ -9,6 +9,12 @@ import { useNavigate } from "react-router-dom"
 import { signIn } from "../../state/reducers/supplierReducer"
 import useMachineNotification from "../../hooks/useMachineNotification"
 
+/**
+ * Component that is rendered when the user navigate to /admin route.
+ * Render log in form to authenticate user.
+ * @returns {React.ReactElement}
+ */
+
 const SupplierPage = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")

@@ -10,6 +10,11 @@ import { useDispatch, useSelector } from "react-redux"
 import { tick } from "../state/reducers/timeReducer"
 import AccessTimeIcon from "@mui/icons-material/AccessTime"
 
+/**
+ * Render time and update state time every 1000 milliseconds
+ * @returns {React.ReactElement} - Material ui core ListItem component
+ */
+
 const Time = () => {
   const time = useSelector(({ time }) => time)
   const dispatch = useDispatch()

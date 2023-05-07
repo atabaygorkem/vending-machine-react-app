@@ -2,6 +2,11 @@ import { Grid } from "@mui/material"
 import { useSelector } from "react-redux"
 import Product from "./Product"
 
+/**
+ * Render all products in the state
+ * @returns {React.ReactElement}
+ */
+
 const ProductList = () => {
   const productsArr = useSelector(({ products }) => products)
   return (
