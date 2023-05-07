@@ -7,19 +7,18 @@ const customerBalanceSlice = createSlice({
   initialState,
   reducers: {
     addMoneyToCustomerBalance(state, action) {
-      return { ...state, balance: state.balance + +action.payload }
+      state.balance = state.balance + +action.payload
     },
     buyProduct(state, action) {
-      return {
-        balance: 0,
-        change: state.change + state.balance - action.payload,
-      }
+      state.change = state.change + state.balance - action.payload
+      state.balance = 0
     },
     refundMoney(state, action) {
-      return { balance: 0, change: state.change + state.balance }
+      state.change = state.change + state.balance
+      state.balance = 0
     },
     returnChange(state, action) {
-      return { ...state, change: 0 }
+      state.change = 0
     },
   },
 })

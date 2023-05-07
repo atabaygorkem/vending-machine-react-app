@@ -8,17 +8,19 @@ const supplierSlice = createSlice({
   reducers: {
     signIn(state, { payload: { username, password } }) {
       if (username === "admin" && password === "admin") {
-        return { ...state, isAuthorized: true }
-      } else return state
+        state.isAuthorized = true
+      } else {
+        state.isAuthorized = false
+      }
     },
     signOut(state, action) {
-      return { ...state, isAuthorized: false }
+      state.isAuthorized = false
     },
     addMoneyToSupplierBalance(state, { payload }) {
-      return { ...state, supplierBalance: state.supplierBalance + payload }
+      state.supplierBalance = state.supplierBalance + payload
     },
     withdrawMoney(state, action) {
-      return { ...state, supplierBalance: 0 }
+      state.supplierBalance = 0
     },
   },
 })

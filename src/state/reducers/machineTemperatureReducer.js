@@ -12,27 +12,21 @@ const machineTemperatureSlice = createSlice({
   initialState,
   reducers: {
     increaseTemperature(state, action) {
-      return {
-        ...state,
-        currentTemperature: state.currentTemperature + 1,
-      }
+      state.currentTemperature = state.currentTemperature + 1
     },
     coolTheSystem(state, action) {
-      return {
-        ...state,
-        currentTemperature: state.currentTemperature - 1,
-        isCooling: true,
-      }
+      state.currentTemperature = state.currentTemperature - 1
+      state.isCooling = true
     },
     stopCooling(state, action) {
-      return { ...state, isCooling: false }
+      state.isCooling = false
     },
   },
 })
 
 export const decreaseTemperature = () => {
   return (dispatch, getState) => {
-    console.log("state: ", getState())
+    // console.log("state: ", getState())
     const {
       machineTemperature: { isCooling },
     } = getState()
