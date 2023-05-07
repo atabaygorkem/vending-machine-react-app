@@ -34,8 +34,8 @@ const MachineTemperature = () => {
           <ListItemText>
             {temperature.currentTemperature}°C{" "}
             {temperature.isCooling && (
-              <ListItemIcon sx={{ fontSize: "14px" }}>
-                Cooling <AcUnitIcon />
+              <ListItemIcon>
+                Cooling <AcUnitIcon fontSize="14px" />
               </ListItemIcon>
             )}
           </ListItemText>

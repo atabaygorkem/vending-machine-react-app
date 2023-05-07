@@ -23,7 +23,7 @@ const Notification = () => {
       sx={{ marginBottom: "75px" }}
       onClose={handleClose}
     >
-      <Alert severity={type} sx={{ width: "100%" }}>
+      <Alert severity={type} sx={{ width: "100%" }} className="noselect">
         {text}
       </Alert>
     </Snackbar>

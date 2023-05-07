@@ -54,9 +54,9 @@ const productsSlice = createSlice({
         )
       }
     },
-    // resetSelection(state, action) {
-    //   return state.map((item) => ({ ...item, isSelected: false }))
-    // },
+    resetSelection(state, action) {
+      return state.map((item) => ({ ...item, isSelected: false }))
+    },
   },
 })
 
