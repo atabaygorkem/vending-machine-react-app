@@ -9,6 +9,7 @@ import { useSelector } from "react-redux"
 
 const CustomerBalance = () => {
   const { customerBalance } = useSelector((state) => state)
+
   return (
     <Grid container item justifyContent="center" mb={3}>
       <IconButton>

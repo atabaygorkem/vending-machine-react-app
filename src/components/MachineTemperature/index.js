@@ -17,6 +17,7 @@ const MachineTemperature = () => {
   )
   const dispatch = useDispatch()
 
+  //Check machineTemperature state to fire decreaseTemperature action
   useEffect(() => {
     if (temperature.currentTemperature >= temperature.maxTemperature) {
       dispatch(decreaseTemperature())

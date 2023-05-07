@@ -15,6 +15,7 @@ import MachineButton from "../MachineButton"
 const ChangeBox = () => {
   const { customerBalance } = useSelector((state) => state)
   const dispatch = useDispatch()
+  /* Get buttons status from machineTemperature state */
   const isDisabled = useButtonStatus()
   const sendNotification = useMachineNotification()
 

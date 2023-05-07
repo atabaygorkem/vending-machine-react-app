@@ -24,6 +24,7 @@ const OperationsPage = () => {
   const { customerBalance, products } = useSelector((state) => state)
   const dispatch = useDispatch()
   const sendNotification = useMachineNotification()
+  /* Get buttons status from machineTemperature state */
   const isDisabled = useButtonStatus()
 
   const purchaseProduct = () => {

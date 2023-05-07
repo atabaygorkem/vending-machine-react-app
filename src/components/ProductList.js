@@ -13,6 +13,7 @@ const ProductList = () => {
     <div>
       <Grid item container justifyContent="space-evenly">
         {productsArr.map((productObj) => {
+          //Extract productId from product objects in the state to destructure props into the Product component
           const { productId, ...productProps } = productObj
 
           return <Product key={productId} {...productProps} />

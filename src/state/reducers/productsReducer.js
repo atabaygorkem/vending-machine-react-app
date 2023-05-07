@@ -40,12 +40,20 @@ const productsSlice = createSlice({
     },
     selectProduct(state, action) {
       const selectedProduct = state.find((item) => item.isSelected)
+      /**
+       * If there is no selected product, select product passed by payload
+       * If user wants to select the same product, toggle selection
+       */
       if (!selectedProduct || action.payload === selectedProduct.productName) {
         return state.map((item) =>
           item.productName === action.payload
             ? { ...item, isSelected: !item.isSelected }
             : item
         )
+        /**
+         * If there is a selected product and user wants to select different product
+         * remove selection and select new product
+         */
       } else if (action.payload !== selectedProduct.productName) {
         return state.map((item) =>
           item.productName === action.payload

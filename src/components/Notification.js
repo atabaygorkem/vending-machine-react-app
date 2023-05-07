@@ -14,6 +14,8 @@ const Notification = () => {
   const dispatch = useDispatch()
 
   const handleClose = (event, reason) => {
+    //If user click away, do not close notification
+    //Snackbar component passes reason parameter
     if (reason === "clickaway") {
       return
     }

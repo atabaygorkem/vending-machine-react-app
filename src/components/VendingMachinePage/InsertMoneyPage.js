@@ -12,6 +12,7 @@ import MachineButton from "../MachineButton"
  */
 
 const InsertMoneyPage = () => {
+  /* Get buttons status from machineTemperature state */
   const isDisabled = useButtonStatus()
   const dispatch = useDispatch()
 

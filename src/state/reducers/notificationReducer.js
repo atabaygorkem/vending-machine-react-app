@@ -18,6 +18,14 @@ const notificationSlice = createSlice({
   },
 })
 
+/**
+ * Get the details about notification to set and render notification into the screen
+ * @param {Object} notifyObj
+ * @param {String} notifyObj.text - Notification text
+ * @param {String} notifyObj.type - Notification type
+ * @param {Integer} timeout  - Duration of notification in seconds
+ */
+
 export const applyNotification = (notifyObj, timeout) => {
   return (dispatch) => {
     dispatch(setNotification({ ...notifyObj, duration: timeout * 1000 }))
