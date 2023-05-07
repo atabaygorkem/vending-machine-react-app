@@ -11,6 +11,7 @@ import useButtonStatus from "../hooks/useButtonStatus"
 import { increaseTemperature } from "../state/reducers/machineTemperatureReducer"
 import { selectProduct } from "../state/reducers/productsReducer"
 import { addFiveMin } from "../state/reducers/timeReducer"
+import PropTypes from "prop-types"
 
 const Product = ({
   productName,
@@ -61,6 +62,13 @@ const Product = ({
       </CardActionArea>
     </Card>
   )
+}
+
+Product.propTypes = {
+  productName: PropTypes.string.isRequired,
+  productPrice: PropTypes.number.isRequired,
+  productQuantity: PropTypes.number.isRequired,
+  isSelected: PropTypes.bool.isRequired,
 }
 
 export default Product
