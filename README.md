@@ -1,5 +1,7 @@
 # Vending Machine React Web App
 
+![loginPage](https://user-images.githubusercontent.com/71181868/236713725-611f8d2b-9bed-40a8-b0d2-e09d7ebb54e1.png)
+
 ## Quick Start
 
 ```sh
