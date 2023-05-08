@@ -1,4 +1,10 @@
-# Vending Machine React Web App
+<div align="center" markdown="1">
+
+  # Vending Machine React Web App
+
+</div>
+
+
 
 ## Quick Start
 
@@ -19,6 +25,7 @@ npm start
 ### Cypress Tests
 
 Before running tests, make sure the application runs on port 3000
+
 Run command at the project's root directory
 
 ```sh
