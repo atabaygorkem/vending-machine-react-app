@@ -52,11 +52,13 @@ const Product = ({
       onClick={onClick}
     >
       <CardActionArea>
-        <CardMedia
-          sx={{ height: 150, width: 250 }}
-          image={`/static/images/${productName.toLowerCase()}.jpg`}
-          title={productName}
-        />
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <CardMedia
+            sx={{ height: 150, width: 250 }}
+            image={`/static/images/${productName.toLowerCase()}.jpg`}
+            title={productName}
+          />
+        </div>
         <CardContent>
           <Grid container direction="column" alignItems="center">
             <Typography gutterBottom variant="h5" component="div">
